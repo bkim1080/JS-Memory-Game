@@ -1,0 +1,31 @@
+{
+	"name": "js-memory-game",
+	"version": "1.0.0",
+	"description": "This is a memory game application",
+	"main": "index.html",
+	"scripts": {
+		"build": "npm run clean && npm run imagemin && npm run usemin",
+		"clean": "rimraf dist",
+		"imagemin": "imagemin images/* -o dist/images",
+		"lite": "lite-server",
+		"start": "npm run lite",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bkim1080/JS-Memory-Game.git"
+	},
+	"author": "Bryan Kim",
+	"license": "ISC",
+	"devDependencies": {
+		"imagemin-cli": "^5.1.0",
+		"lite-server": "^2.6.1",
+		"rimraf": "^3.0.2",
+		"usemin-cli": "^0.6.0"
+	},
+	"bugs": {
+		"url": "https://github.com/bkim1080/JS-Memory-Game/issues"
+	},
+	"homepage": "https://github.com/bkim1080/JS-Memory-Game#readme"
+}
